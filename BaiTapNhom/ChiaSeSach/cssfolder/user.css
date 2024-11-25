@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* Ảnh */
+    background-image: url("../images/background/moon.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-color: #f4f4f4;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+    margin: 20px auto;
+    width: 80%; 
+}
+
+.book-item {
+    flex: 1 0 16%; 
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    text-align: center;
+}
+
+.book-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.book-author {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.btn-detail {
+    display: inline-block;
+    background-color: #FF0000;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-detail:hover {
+    background-color: #cc0000;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}
+
+.current-page {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.total-pages {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ddd;
+}
